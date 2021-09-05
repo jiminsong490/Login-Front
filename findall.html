@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="script.js" defer></script>
+        <script src="findall.js" defer></script>
+        <title>아이디, 비밀번호 찾기</title>
+    </head>
+    <body>
+        <div>
+            <input
+                id="tel"
+                name="tel"
+                type="tel"
+                placeholder="전화번호를 입력하여주십시오."
+            />
+            <br />
+            <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="이름을 입력하여주십시오."
+                autocomplete="off"
+            />
+        </div>
+        <br />
+        <div>
+            <input type="button" value="아이디 찾기" onclick="findall()" />
+        </div>
+        <br />
+        <input
+            type="button"
+            value="비밀번호 찾기"
+            onclick="location.href = 'http://127.0.0.1:5500/changepassword.html'"
+        />
+    </body>
+</html>

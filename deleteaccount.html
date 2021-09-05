@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="script.js" defer></script>
+        <script src="deleteaccount.js" defer></script>
+        <title>비밀번호 변경</title>
+    </head>
+    <body>
+        <div>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="이메일을 입력하여주십시오."
+                maxlength="30"
+                size="30"
+                autofocus
+                required
+            />
+            <br />
+            <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="비밀번호를 입력하여주십시오."
+                minlength="12"
+                maxlength="20"
+                size="15"
+            />
+        </div>
+        <br />
+        <input type="button" value="회원 탈퇴" onclick="deleteAccount()" />
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>로그인</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="UTF-8" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <form id="form1" name="form1">
+                <section>
+                    <div>
+                <input id = "email" name="email" type="email" placeholder="이메일을 입력하여주십시오." maxlength="30" size="30" autofocus
+                required/>
+                <div>
+                <input id="password" name="password" type="password" placeholder="비밀번호를 입력하여주십시오."
+                minlength="12" maxlength="20" size="15" oninput="change(this)" required/>
+                <input id ="submit" name="submit" type="button" value="login" onclick="login()"></input>
+                <input type="button" value="logout" onclick="logout()">
+                </div><br>
+                <div>
+                <input id="signup" name="signup" type="button" value="회원가입" onclick="location.href = 'http://127.0.0.1:5500/signup.html'"/>
+                <input id="deleate" name="deleteaccount" type="button" value="회원탈퇴" onclick="location.href = 'http://127.0.0.1:5500/deleteAccount.html'">
+                <input type="button" value="비밀번호 변경" onclick="location.href = 'http://127.0.0.1:5500/changepassword.html'">
+                </div><br>
+                <input type="button" value="아이디/비밀번호 찾기" onclick="location.href = 'http://127.0.0.1:5500/findall.html'">
+            </div>
+            </section>
+            </form>
+        </div>
+    </body>
+</html>
